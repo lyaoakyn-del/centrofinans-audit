@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d2024">
+  <meta name="description" content="Аудит социальных сетей ЦЕНТРОФИНАНС — наблюдения и предложения Натальи Цыганковой, 19 ноября 2026 года.">
+  <title>ЦЕНТРОФИНАНС — аудит социальных сетей</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3f1ee;
+      --paper: #ffffff;
+      --ink: #202327;
+      --muted: #656b70;
+      --line: #e5e1dc;
+      --accent: #e95a2a;
+      --accent-pale: #fff1eb;
+      --dark: #1d2024;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.55 "Segoe UI", Arial, sans-serif;
+    }
+    a { color: inherit; }
+    .wrap { width: min(940px, calc(100% - 40px)); margin-inline: auto; }
+    .topline { height: 6px; background: var(--accent); }
+    .masthead { padding: 42px 0 30px; }
+    .eyebrow { margin: 0 0 9px; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 10px; font-size: clamp(34px, 5.5vw, 54px); line-height: 1.08; letter-spacing: -.04em; }
+    .intro { max-width: 730px; margin-bottom: 18px; color: #474d52; font-size: 18px; }
+    .byline { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .byline strong { color: var(--ink); font-weight: 700; }
+    .sources { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 20px; margin-top: 24px; border-top: 1px solid #ddd8d3; }
+    .sources-label { margin-right: 7px; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+    .source-link { padding: 7px 12px; border: 1px solid #dbd5cf; border-radius: 5px; background: #fff; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .source-link:hover, .source-link:focus-visible { border-color: var(--accent); color: #ad401b; outline: 2px solid transparent; }
+    main { padding-bottom: 58px; }
+    .report { padding: 34px clamp(22px, 5vw, 56px) 30px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); box-shadow: 0 14px 38px rgba(24, 28, 31, .06); }
+    h2 { margin-bottom: 7px; font-size: 25px; line-height: 1.2; letter-spacing: -.025em; }
+    .report-lead { max-width: 640px; margin: 0; color: var(--muted); font-size: 14px; }
+    .sequence { margin: 26px 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; counter-reset: item; }
+    .sequence li { position: relative; padding: 23px 0 24px 54px; border-bottom: 1px solid var(--line); counter-increment: item; }
+    .sequence li:last-child { border-bottom: 0; padding-bottom: 8px; }
+    .sequence li::before { position: absolute; top: 28px; left: 0; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .08em; content: counter(item, decimal-leading-zero); }
+    h3 { margin-bottom: 8px; font-size: 18px; line-height: 1.25; letter-spacing: -.02em; }
+    .sequence p { max-width: 700px; margin-bottom: 0; }
+    .sequence p + p { margin-top: 9px; }
+    .sequence a { color: #aa441e; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .sequence code { padding: 2px 4px; border-radius: 3px; background: var(--accent-pale); font: .86em Consolas, monospace; }
+    .evidence { margin: 17px 0 0; }
+    .evidence a { display: inline-block; max-width: 100%; }
+    .evidence img { display: block; width: min(100%, 420px); height: auto; border: 1px solid var(--line); border-radius: 5px; }
+    .evidence figcaption { margin-top: 6px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 24px, 940px); }
+      .masthead { padding: 29px 0 22px; }
+      .source-link { font-size: 12px; }
+      .report { padding: 23px 17px 20px; }
+      .sequence li { padding-left: 37px; }
+      .sequence li::before { top: 27px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .topline { height: 4px; }
+      .masthead { padding: 20px 0; }
+      .report { padding: 0; border: 0; box-shadow: none; }
+      .source-link { border: 0; padding-left: 0; }
+      .sequence li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+  <header class="wrap masthead">
+    <p class="eyebrow">Аудит публичных площадок</p>
+    <h1>ЦЕНТРОФИНАНС</h1>
+    <p class="intro">Наблюдения и предложения по работе с контентом в социальных сетях.</p>
+    <p class="byline"><strong>Наталья Цыганкова</strong> · 19 ноября 2026</p>
+    <div class="sources" aria-label="Площадки аудита">
+      <span class="sources-label">Каналы</span>
+      <a class="source-link" href="https://vk.ru/centrofinans" target="_blank" rel="noopener noreferrer">ВКонтакте ↗</a>
+      <a class="source-link" href="https://ok.ru/centrofinans" target="_blank" rel="noopener noreferrer">Одноклассники ↗</a>
+      <a class="source-link" href="https://max.ru/centrofinans" target="_blank" rel="noopener noreferrer">MAX ↗</a>
+      <a class="source-link" href="https://t.me/centrofinans" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="report" aria-labelledby="report-title">
+      <h2 id="report-title">Наблюдения и предложения</h2>
+      <p class="report-lead">Срез открытых страниц и публикаций на 18–19 ноября 2026 года. Данные внутренней аналитики не использовались.</p>
+      <ol class="sequence">
+        <li><h3>Оформление каналов</h3><p>Все каналы оформлены понятно. Во ВКонтакте — ясное название сообщества и удачная обложка. Я бы добавила в это сообщество закреплённый пост с понятным УТП и самой важной информацией о предложении.</p><figure class="evidence"><a href="assets/ok-profile.png" target="_blank" rel="noopener noreferrer"><img src="assets/ok-profile.png" alt="Оформление сообщества Центрофинанс в Одноклассниках"></a><figcaption>Пример оформления: Одноклассники · 19.11.2026</figcaption></figure></li>
+        <li><h3>Фирменный стиль</h3><p>Публикации выдержаны в фирменном стиле, визуально лента выглядит хорошо.</p></li>
+        <li><h3>Переход из профиля</h3><p>Ссылки в описаниях Telegram, MAX и Одноклассников работают и содержат UTM-метки. Из Telegram и Одноклассников они ведут в каталог займов, из MAX — на главную страницу.</p></li>
+        <li><h3>Кросспубликация</h3><p>В соцсетях много одинаковых публикаций. Частично кросспостить можно, но каждой площадке нужен и свой контент. В <a href="https://t.me/centrofinans/3659" target="_blank" rel="noopener noreferrer">Telegram-посте о самозанятости</a> ссылка проходит через <code>vk.ru/away.php</code>. Для каждой площадки лучше ставить прямую ссылку с собственной UTM-меткой.</p></li>
+        <li><h3>Полезный контент</h3><p>В MAX и Telegram стоит добавить больше образовательных и полезных материалов. Их можно публиковать в обоих каналах.</p></li>
+        <li><h3>Клипы ВКонтакте</h3><p>Для ВКонтакте я бы включила клипы в контент-стратегию как отдельный формат.</p></li>
+        <li><h3>Частота публикаций</h3><p>Раньше публикации выходили каждый день, а в ноябре постов стало меньше. Я бы составила контент-план и вернулась к ежедневным публикациям.</p></li>
+        <li><h3>Призыв к действию</h3><p>Не во всех продающих публикациях есть призыв к действию: например, <a href="https://t.me/centrofinans/3658" target="_blank" rel="noopener noreferrer">пост о преимуществах</a> заканчивается общим обращением к подписчикам. В продающих постах я бы указывала один конкретный следующий шаг. Также включила бы в контент-план развлекательные и потенциально виральные публикации с уместным призывом к действию.</p></li>
+        <li><h3>Редактура текстов</h3><p>В <a href="https://t.me/centrofinans/3658" target="_blank" rel="noopener noreferrer">посте о преимуществах</a> общие обещания и фразы-клише перегружают текст. Его стоит сократить, оставить конкретную пользу и проверить численные обещания по условиям продукта.</p><figure class="evidence"><a href="assets/telegram-post-copy-example.png" target="_blank" rel="noopener noreferrer"><img src="assets/telegram-post-copy-example.png" alt="Пример поста в Telegram с отмеченными общими формулировками"></a><figcaption>Пример публикации в Telegram · нажмите, чтобы увеличить</figcaption></figure></li>
+        <li><h3>Конкурс</h3><p>Идея конкурса интересная. В <a href="https://t.me/centrofinans/3676" target="_blank" rel="noopener noreferrer">посте с итогами</a> названы питомцы и призовые места, но нет фотографий победивших работ. Для фотоконкурса результат остаётся неочевидным.</p></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
