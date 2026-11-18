@@ -43,6 +43,10 @@
     .report { padding: 34px clamp(22px, 5vw, 56px) 30px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); box-shadow: 0 14px 38px rgba(24, 28, 31, .06); }
     h2 { margin-bottom: 7px; font-size: 25px; line-height: 1.2; letter-spacing: -.025em; }
     .report-lead { max-width: 640px; margin: 0; color: var(--muted); font-size: 14px; }
+    .priorities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 23px; }
+    .priority { padding: 17px 18px; border: 1px solid #f4d7c9; border-radius: 7px; background: var(--accent-pale); }
+    .priority b { display: block; margin-bottom: 7px; color: #b44721; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+    .priority p { margin: 0; font-size: 14px; line-height: 1.45; }
     .sequence { margin: 26px 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; counter-reset: item; }
     .sequence li { position: relative; padding: 23px 0 24px 54px; border-bottom: 1px solid var(--line); counter-increment: item; }
     .sequence li:last-child { border-bottom: 0; padding-bottom: 8px; }
@@ -54,13 +58,15 @@
     .sequence code { padding: 2px 4px; border-radius: 3px; background: var(--accent-pale); font: .86em Consolas, monospace; }
     .evidence { margin: 17px 0 0; }
     .evidence a { display: inline-block; max-width: 100%; }
-    .evidence img { display: block; width: min(100%, 420px); height: auto; border: 1px solid var(--line); border-radius: 5px; }
+    .evidence img { display: block; width: min(100%, 620px); height: auto; border: 1px solid var(--line); border-radius: 5px; }
     .evidence figcaption { margin-top: 6px; color: var(--muted); font-size: 12px; }
     @media (max-width: 620px) {
       .wrap { width: min(100% - 24px, 940px); }
       .masthead { padding: 29px 0 22px; }
       .source-link { font-size: 12px; }
       .report { padding: 23px 17px 20px; }
+      .priorities { grid-template-columns: 1fr; }
+      .priority { padding: 14px 15px; }
       .sequence li { padding-left: 37px; }
       .sequence li::before { top: 27px; }
     }
@@ -93,6 +99,11 @@
     <section class="report" aria-labelledby="report-title">
       <h2 id="report-title">Наблюдения и предложения</h2>
       <p class="report-lead">Срез открытых страниц и публикаций на 18–19 ноября 2026 года. Данные внутренней аналитики не использовались.</p>
+      <div class="priorities" aria-label="Приоритеты доработок">
+        <div class="priority"><b>01 · Первое касание</b><p>Закрепить УТП во ВКонтакте и указывать один понятный следующий шаг в продающих постах.</p></div>
+        <div class="priority"><b>02 · Форматы</b><p>Добавить клипы во ВКонтакте, а полезные материалы адаптировать для Telegram и MAX.</p></div>
+        <div class="priority"><b>03 · Выпуск</b><p>Вернуть ежедневные публикации по контент-плану и редактировать тексты перед выпуском.</p></div>
+      </div>
       <ol class="sequence">
         <li><h3>Оформление каналов</h3><p>Все каналы оформлены понятно. Во ВКонтакте — ясное название сообщества и удачная обложка. Я бы добавила в это сообщество закреплённый пост с понятным УТП и самой важной информацией о предложении.</p><figure class="evidence"><a href="assets/ok-profile.png" target="_blank" rel="noopener noreferrer"><img src="assets/ok-profile.png" alt="Оформление сообщества Центрофинанс в Одноклассниках"></a><figcaption>Пример оформления: Одноклассники · 19.11.2026</figcaption></figure></li>
         <li><h3>Фирменный стиль</h3><p>Публикации выдержаны в фирменном стиле, визуально лента выглядит хорошо.</p></li>
